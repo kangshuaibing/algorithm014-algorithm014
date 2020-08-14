@@ -23,13 +23,13 @@ look up  | O(1) | O(n)
 insert  | O(n) | O(1) 
 delete  | O(n) | O(1) 
 ### 2.栈(Stack)，队列(Queue)
-*栈:先入后出，添加、删除皆为O(1)  
-*队列:先入先出，添加、删除皆为O(1)  
-*双端队列(deque:Double-End-Queue)  
-*优先队列(pritory queue)  
- 1.插入O(1)  
- 2.取出O(logN)-按照元素优先级  
- 3.底层具体实现：堆(heap)、二叉搜索树(bst)、堆树(treap)
+* 栈:先入后出，添加、删除皆为O(1)  
+* 队列:先入先出，添加、删除皆为O(1)  
+* 双端队列(deque:Double-End-Queue)  
+* 优先队列(pritory queue)  
+  1.插入O(1)  
+  2.取出O(logN)-按照元素优先级  
+  3.底层具体实现：堆(heap)、二叉搜索树(bst)、堆树(treap)
 
 *最近相关性-栈  
 *先来后到-队列
