@@ -4,7 +4,7 @@
 ----
 ## 视频笔记
 ----
-###数组array，链表linked list，跳表skip list
+### 1.数组array，链表linked list，跳表skip list
  | 数组  | 链表 | 跳表
 ---- | ----- | ----   
 prepend  | O(1) | O(1) 
@@ -12,6 +12,9 @@ apppend  | O(1) | O(1)
 look up  | O(1) | O(n) 
 insert  | O(n) | O(1) 
 delete  | O(n) | O(1) 
+### 2.栈Stack，队列Queue
+stack:先入后出，添加、删除皆为O(1)
+queue:先入先出，添加、删除皆为O(1)
 
 ## 刷题记录
 
