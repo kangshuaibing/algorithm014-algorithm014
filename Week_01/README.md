@@ -13,7 +13,7 @@ look up  | O(1) | O(n)
 insert  | O(n) | O(1) 
 delete  | O(n) | O(1) 
 ### 2.栈Stack，队列Queue
-stack:先入后出，添加、删除皆为O(1)<br>
+stack:先入后出，添加、删除皆为O(1)  
 queue:先入先出，添加、删除皆为O(1)
 
 ## 刷题记录
