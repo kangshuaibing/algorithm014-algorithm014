@@ -18,9 +18,6 @@ public:
         }
         
         return x == revertNumber  || x == revertNumber/10;
-            
-        
-        
     }
 };
 // @lc code=end
