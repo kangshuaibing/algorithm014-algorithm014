@@ -4,13 +4,13 @@
 算法训练营的第二周，除了把超哥课上讲到的题目做了一遍外，也在坚持每日一题。算下来平均每天才两道题，距离五毒神掌还是与差距的，下周开始要每天三题和画脑图。
 
 ## 切题四件套
-1.Clarificatin 
+1.Clarificatin  
 2.pssiable solution --> ptimal(time & space)  
-3.code 
-4.test cases
+3.code   
+4.test cases  
 ## 视频笔记
 ### 1.哈希表，映射，集合()
-* 工程实践
+* 工程实践  
   1.电话簿  
   2.用户信息表  
   3.缓存(LRU Cache)
