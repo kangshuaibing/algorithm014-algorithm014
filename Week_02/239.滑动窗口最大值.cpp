@@ -26,6 +26,7 @@ public:
                     index.pop_back();
                 if(!index.empty() && index.front() <= (i -k))
                     index.pop_front();
+                index.push_back(i);
             }
             res.push_back(nums[index.front()]);          
         }
