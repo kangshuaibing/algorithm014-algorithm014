@@ -6,19 +6,29 @@
 
 // @lc code=start
 class Solution {
+    vector<vector<int>> res;
 public:
-    void DFS(vector<vector<int>> ans,vector<int> nums,vector<int>> temp,int index)
-    {
-        if(index==nums.size())
-        {
-            ans.push_back(temp);
-            return;
-        }
-        dfs
-    } 
-    vector<vector<int>> subsets(vector<int>& nums) {
-        vector<vector<int>> res;
+
+    void backtrack(vector<int>& nums, int start, vector<int>& track) {
+    res.push_back(track);
+    for (int i = start; i < nums.size(); i++) {
+        // 做选择
+        track.push_back(nums[i]);
+        // 回溯
+        backtrack(nums, i + 1, track);
+        // 撤销选择
+        track.pop_back();
     }
+    }
+    vector<vector<int>> subsets(vector<int>& nums) {
+        vector<int> track;
+        backtrack(nums,0,track);
+        return res;
+    
+    }
+    
+
+
 };
 // @lc code=end
 

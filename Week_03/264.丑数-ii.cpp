@@ -9,7 +9,7 @@ class Solution {
 public:
     int nthUglyNumber(int n) {
         /*
-        //暴力求解,求出所有排序
+        //暴力求解,求出所有排序-超时
         vector<int> res;   
         for(int i = 0; i <= INT_MAX; i=i*2)      
             for(int j = i; j <= INT_MAX; j=j*3)         
