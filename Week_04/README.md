@@ -22,16 +22,74 @@
 3.对于节点的访问顺序不同  
 -深度优先：depth first search  
 -广度优先: breadth first search  
+-优先级优先（启发式搜索)
 
-### 2.栈(Stack)，队列(Queue)
-* 栈:先入后出，添加、删除皆为O(1)  
-* 队列:先入先出，添加、删除皆为O(1)  
-* 双端队列(deque:Double-End-Queue)  
-* 优先队列(pritory queue)  
-  1.插入O(1)  
-  2.取出O(logN)-按照元素优先级  
-  3.底层具体实现：堆(heap)、二叉搜索树(bst)、堆树(treap)
+* DFS模板
+def dfs(node):
+	if node in visited:
+		#already visited
+		return
+		
+	visited.add(node)
+	
+	# process current node
+	#...#logic here
+	dfs(node.left)
+	dfs(node.right)
 
+* DFS代码-递归写法1
+visited = set()
+def dfs(node,visited):
+	visited.add(node)
+	# process current node
+	#...
+	for next_node in node.children():
+		if not_node in visited:
+			dfs(next node,visited)
+
+* DFS代码-递归写法1
+visited = set()
+def dfs(node,visited):
+	if node in visited:
+		#terminator
+		#already visited
+		return
+		
+	visited.add(node)
+	# process current node
+	#...
+	for next_node in node.children():
+		if not_node in visited:
+			dfs(next node,visited)
+			
+* BFS代码
+def BFS(graph,start,end)
+	que =[]
+	queue.append([start])
+	visited.add(start)
+	
+	while queue:
+	node = queue.pop();
+	visited.add(node)
+	
+	process(node)
+	nodes = generate_related_nodes(node)
+	queue.push(nodes)
+	
+	#other processing work
+		
+### 贪心算法 Greedy
+* 在每一步选择中都采取当前状态下最好或最优（即最有利）的选择，从而希望导致结果是全局最优
+或者最好的算法
+* 贪心算法与动态规划的不同在于它对每个子伪命题的解决方案都做出选择，不能回退；动态规划
+则会保存以前的运行结果，并根据以前的结果对当前进行选择，有回退功能。
+1. 贪心：当下做局部最优判断
+2. 回溯：能够回退  
+3. 动态规划：最有判断 + 回退  
+* 贪心法可以解决一些有优化问题，如：求图的最小生成树、求哈夫曼编码等。然而对于工程和生活中的问题，
+贪心算法一般不能得到我们所求的答案。
+* 一旦一个问题可以通过贪心法来解决，那么贪心法一般是解决这个问题的最好方法。由于贪心法的高效性以及求
+其所得的答案比较接近最优结果，贪心法也可以用作辅助算法或者直接解决一些要求结果不特别精确的问题。
 * 最近相关性-栈  
 * 先来后到-队列  
 
