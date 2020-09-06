@@ -12,58 +12,58 @@
 -优先级优先（启发式搜索)
 
 * DFS模板
-def dfs(node):
-	if node in visited:
-		#already visited
-		return
+def dfs(node):  
+	if node in visited:  
+		#already visited  
+		return  
 		
-	visited.add(node)
+	visited.add(node)  
 	
-	# process current node
-	#...#logic here
-	dfs(node.left)
-	dfs(node.right)
+	# process current node  
+	#...#logic here  
+	dfs(node.left)  
+	dfs(node.right)  
 
 * DFS代码-递归写法1
-visited = set()
-def dfs(node,visited):
-	visited.add(node)
-	# process current node
-	#...
-	for next_node in node.children():
-		if not_node in visited:
-			dfs(next node,visited)
+visited = set()  
+def dfs(node,visited):  
+	visited.add(node)  
+	# process current node  
+	#...  
+	for next_node in node.children():  
+		if not_node in visited:  
+			dfs(next node,visited)  
 
 * DFS代码-递归写法1
-visited = set()
-def dfs(node,visited):
-	if node in visited:
-		#terminator
-		#already visited
-		return
+visited = set()  
+def dfs(node,visited):  
+	if node in visited:  
+		#terminator  
+		#already visited  
+		return  
 		
-	visited.add(node)
-	# process current node
-	#...
-	for next_node in node.children():
-		if not_node in visited:
-			dfs(next node,visited)
+	visited.add(node)  
+	# process current node  
+	#...  
+	for next_node in node.children():  
+		if not_node in visited:  
+			dfs(next node,visited)  
 			
 * BFS代码
-def BFS(graph,start,end)
-	que =[]
-	queue.append([start])
-	visited.add(start)
+def BFS(graph,start,end)  
+	que =[]  
+	queue.append([start])  
+	visited.add(start)  
 	
-	while queue:
-	node = queue.pop();
-	visited.add(node)
+	while queue:  
+	node = queue.pop();  
+	visited.add(node)  
 	
-	process(node)
-	nodes = generate_related_nodes(node)
-	queue.push(nodes)
+	process(node)  
+	nodes = generate_related_nodes(node)  
+	queue.push(nodes)  
 	
-	#other processing work
+	#other processing work  
 		
 ### 贪心算法 Greedy
 * 在每一步选择中都采取当前状态下最好或最优（即最有利）的选择，从而希望导致结果是全局最优
@@ -86,19 +86,19 @@ def BFS(graph,start,end)
 3. 能够通过索引访问（index accessible）
 
 * 代码模板
-left,right =0, len(arrayt) - 1
-while left <= right:
-	mid =(left + right)/2
-	if array[mid] == target:
-		#find the trarget!!
-		break or return result
-	else if array[mid] < target:
-		left = mid + 1
-	else 
-		right = mid - 1
+left,right =0, len(arrayt) - 1  
+while left <= right:  
+	mid =(left + right)/2  
+	if array[mid] == target:  
+		#find the trarget!!  
+		break or return result  
+	else if array[mid] < target:  
+		left = mid + 1  
+	else   
+		right = mid - 1  
 	
-	//防止相加越界
-	mid =left + (left - right)/2
+	//防止相加越界  
+	mid =left + (left - right)/2  
 	
 	
 
